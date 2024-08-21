@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --gray: #C4C4CC;
+  --text-color: #E1E1E6;
+  --white: #FFF;
+  --primary-color: #02799D;
+  font-size: 62.5%;
+}
+
+button, body, input{
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 100%;
+
+  font-size: 1.6rem;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 125%;
+}
+
+p{
+  color: var(--text-color);
+  height: 1.8rem;
+  line-height: 160%;
+}
+
+nav{
+  width: 100%;
+  padding: 4rem 7.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4rem;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  color: var(--gray);
+}
+
+.nav-selected{
+  color: var(--white);
+  font-weight: bold;
+}
+
+button{
+  background-color: transparent;
+  width: fit-content;
+  padding: 1.2rem 3.2rem;
+  margin: 2.4rem auto 0;
+
+  border: .2rem solid var(--white);
+  border-radius: .5rem;
+
+  color: var(--white);
+
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transition: background-color 0.5s;
+}
+
+button:hover{
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.section-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  height: 100%;
+  width: 100%;
+
+  align-items: start;
+  justify-content: start;
+
+  padding: 6rem 10rem;
+}
+
+.section-home{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
